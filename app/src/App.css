@@ -1,0 +1,88 @@
+body {
+  background-image: url('./assets/fundopk2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #f0f0f0;
+  min-height: 100vh;
+  margin: 0;
+}
+
+#Corpo{
+  margin: 0 auto;
+  width: 60%;
+  background-color:  rgba(255, 227, 48, 0.734);
+}
+
+.div1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  
+}
+
+.imagem {
+  width: 500px;
+  height: auto;
+  display: block;
+}
+
+.linha-divisoria {
+  width: 100%;
+  margin-top: 20px;
+  border: 0;
+  border-top: 3px solid #ffffff;
+}
+
+.menu-grid {
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px 100px;
+  max-width: 800px;
+  margin: 25px auto 0 auto;
+  width: 100%;
+}
+
+.item-topo {
+  background-color: rgba(255, 227, 48, 0.734);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #0000FF;
+  font-weight: bold;
+  font-size: 25px;
+  text-decoration: underline;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.item-menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #0000FF;
+  font-weight: bold;
+  font-size: 23px;
+  text-decoration: underline;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.icone-item {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 10px;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+    max-width: 300px;
+  }
+}
